@@ -12,8 +12,9 @@ echo " "
 #Count files/objects for $1: 
 files=`find $1 -type f | wc -l`
 #objects=`ls -d $1 | wc -l`
-objects=`find $1/*/*/* -type d | wc -l`
-#objects_-1=`expr ${all_objects} - 1` # and subtract 1
+all_objects=`find $1/*/*/* -type d | wc -l`   # and subtract 1
+#objects=`expr ${all_objects} - 1`
+objects=${all_objects}  #don't subtract 1 for deeply set file structures
 echo "*** $1 files/objects: $files/$objects"
 
 #Count files/objects for $1_content: 
@@ -42,5 +43,7 @@ echo "*** *.lnk ***"
 find $1* -name *.lnk
 echo "*** manifest.csv ***"
 find $1_* -name manifest.csv
+echo "*** Hidden files ***"
+find $1* -type f -name '.*'
 exit 0
 
