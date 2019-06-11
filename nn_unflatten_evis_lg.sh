@@ -1,3 +1,7 @@
+#This script works from inside a folder to rearrange a shallow set of folders and files.
+#Organization changes from organized by year, to organized by month.
+#This is particularly written for the LG journal set provided by eastview from a 3rd party vendor.
+#This script is customized especially for the evis / newark newspaper project.
 #! /bin/bash
 shopt -s extglob
 shopt -s nullglob
