@@ -1,3 +1,6 @@
+#This script works from inside a folder on a shallow set of sub-folders.
+#The shallow folder set is changed from one organized by year, to one organized by month.
+#This script is customized for the evis / newark newspapers project.
 #! /bin/bash
 shopt -s extglob
 shopt -s nullglob
