@@ -1,3 +1,5 @@
+#This script generates a spreadsheet which can be used to register a list of objects in argo.
+#This script is customized especially for the evis / newark newspaper project.
 import os
 import sys
 
