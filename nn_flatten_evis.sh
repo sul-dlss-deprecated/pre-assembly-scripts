@@ -1,3 +1,5 @@
+#This script works from inside a folder to flatten a deep structure of sub-folders.
+#This script is customized especially for the evis / newark newspaper project.
 #! /bin/bash
 shopt -s extglob
 shopt -s nullglob
