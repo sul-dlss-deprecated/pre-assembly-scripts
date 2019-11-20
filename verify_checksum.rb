@@ -99,7 +99,7 @@ def read_checksum_file(checksum_file)
   checksums = []
   File.readlines(checksum_file).map do |line|
     line.chomp!
-    values = line.split(', ')
+    values = line.match(/, /) ? line.split(/, /) : line.split(',')
 
     info = { 'druid'     => values.at(0),
              'file_name' => values.at(1),
